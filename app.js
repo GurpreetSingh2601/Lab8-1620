@@ -20,11 +20,11 @@ templit();
 // step 5 add the paragraph template you just created to the first div using innerHTML
 function addpara(){
 	let div=document.getElementById('first-div');
-	//creating a new <h2> element
-	let h2= document.createElement('h2');
-	h2.textContent= templit();
-	//adding h2 to div
-	div.appendChild(h2);
+	//creating a new p element
+	let p= document.createElement('p');
+	p.textContent= templit();
+	//adding p to div
+	div.appendChild(p);
 	output= console.log(div.innerHTML);
 	return output;
 }
