@@ -13,9 +13,19 @@ addclass();
 // step 3 create a paragraph template using a template litteral
 function templit(){
 	let para= `Hello, I am creating a paragraph template`;
-	out= console.log(para);
-	return out
+	return para;
 }
 templit();
 
 // step 5 add the paragraph template you just created to the first div using innerHTML
+function addpara(){
+	let div=document.getElementById('first-div');
+	//creating a new <h2> element
+	let h2= document.createElement('h2');
+	h2.textContent= templit();
+	//adding h2 to div
+	div.appendChild(h2);
+	output= console.log(div.innerHTML);
+	return output;
+}
+addpara();
