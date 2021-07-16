@@ -11,5 +11,11 @@ function addclass(){
 }
 addclass();
 // step 3 create a paragraph template using a template litteral
+function templit(){
+	let para= `Hello, I am creating a paragraph template`;
+	out= console.log(para);
+	return out
+}
+templit();
 
 // step 5 add the paragraph template you just created to the first div using innerHTML
